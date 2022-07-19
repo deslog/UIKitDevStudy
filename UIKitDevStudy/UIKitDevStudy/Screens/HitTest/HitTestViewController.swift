@@ -10,9 +10,9 @@ import UIKit
 // ref: https://www.youtube.com/watch?v=2yVzeFIMtyc
 class HitTestViewController: UIViewController {
     
-    private tableView: UITableView = {
-        
-    }()
+//    private tableView: UITableView = {
+//
+//    }()
     
     
     override func viewDidLoad() {
