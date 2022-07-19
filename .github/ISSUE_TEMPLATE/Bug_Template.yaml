@@ -7,7 +7,7 @@ body:
   - type: input
     id: environment-os
     attributes:
-      label: OS Version
+      label: 🐞 OS Version
       description: 버그가 발생한 OS
       placeholder: ex. iOS 15.3 watchOS 8.5
     validations:
@@ -15,7 +15,7 @@ body:
   - type: input
     id: environment-ios
     attributes:
-      label: App Version
+      label: 🐞 App Version
       description: 버그가 발생한 App Version
       placeholder: 1.0.3
     validations:
@@ -23,7 +23,7 @@ body:
   - type: input
     id: environment-xcode
     attributes:
-      label: Xcode Version(Optional)
+      label: 🐞 Xcode Version(Optional)
       description: 버그가 발생한 Xcode Version
       placeholder: "13.3"
     validations:
@@ -31,7 +31,7 @@ body:
   - type: dropdown
     id: target
     attributes:
-      label: Target Device
+      label: 🐞 Target Device
       description: 버그가 발생된 앱이 실행된 곳
       options:
         - Simulator
@@ -51,7 +51,7 @@ body:
   - type: textarea
     id: where-bug
     attributes:
-      label: Related Page
+      label: 🐞 Related Page
       description: 버그와 발생한 페이지를 알려주세요.
       placeholder: ex. MainView
     validations:
@@ -60,7 +60,7 @@ body:
   - type: textarea
     id: bug-flow
     attributes:
-      label: Bug Flow(Optional)
+      label: 🐞 Bug Flow(Optional)
       description: 버그가 발생하게 된 Flow를 알려주세요.
       placeholder: ex. Tab bar의 Home을 200번 눌렀을 때, App이 종료된다.
     validations:
