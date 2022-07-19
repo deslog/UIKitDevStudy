@@ -1,7 +1,7 @@
 name: Feature Template
 description: 기능 추가할 때 쓰는 템플릿
-title: "[feature]: Feature Title"
-labels: ["feature"]
+title: "[Feature] 피쳐 제목"
+labels: ["✨Feature"]
 
 body:
   - type: textarea
