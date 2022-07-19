@@ -42,7 +42,7 @@ body:
   - type: textarea
     id: what-bug
     attributes:
-      label: Bug Report
+      label: 🐞 Bug Report
       description: 어떤 버그인지 설명해주세요.
       placeholder: ex. 닉네임이 공백일 때, Submit이 가능한 버그
     validations:
