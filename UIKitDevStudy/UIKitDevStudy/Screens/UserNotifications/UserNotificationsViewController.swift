@@ -15,6 +15,7 @@ class UserNotificationsViewController: UIViewController {
     private let label: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "push notification demo"
+        $0.textColor = .red
         return $0
     }(UILabel())
 
