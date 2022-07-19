@@ -19,50 +19,49 @@ class UserNotificationsViewController: UIViewController {
         return $0
     }(UILabel())
 
+    // MARK: Property
+
+    private let notificationCenter = UNUserNotificationCenter.current()
+
     // MARK: Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         attribute()
-
-        // 앱이 런치될때 push를 주도록 구현할 예정 -> viewDidLoad에다가 코드 작성
-        // step.1 알람 권한 알럿창 띄우기
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            if error != nil {
-                // handle the error here
-            }
-            // Enable or disable features based on the authorization.
-        }
-
-        // step.2 push 알림에 띄울 content 정의하기
-        let content = UNMutableNotificationContent()
-        content.title = "부모님께 전화할 시간이야!"
-        content.body = "얼른 전화하시지? 전화안한지 3일이나 지났잖아 으휴"
-
-        // step.3 알림 trigger 만들기
-        let date = Date().addingTimeInterval(10) // second
-        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-
-        // step.4 create request
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-
-        // step.5 register request 언제 알림을줄지 등록하는 부분
-        center.add(request) { (error) in
-            // check the error parameter and handle any errors.
-        }
+        layout()
+        generateUserNotification()
     }
 
     // MARK: Method
 
-    func attribute() {
-        layout()
+    private func generateUserNotification() {
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if let error = error {
+                print(error)
+            } else {
+                if granted {
+                    let content = UNMutableNotificationContent()
+                    content.title = "아직 전화하지 않았어요"
+                    content.subtitle = "아들아 보고싶다!!!"
+                    content.body = "전화한지 3일이 지났어요 ㅠㅠ 🥹"
+                    content.badge = 1
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+                    let request = UNNotificationRequest(identifier: "Sample Notification", content: content, trigger: trigger)
+                    self.notificationCenter.add(request, withCompletionHandler: nil)
+                } else {
+                    print("Not Granted")
+                }
+            }
+        }
     }
 
-    func layout() {
+    private func attribute() {
+        view.backgroundColor = .systemGroupedBackground
+    }
+
+    private func layout() {
         view.addSubview(label)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
