@@ -1,7 +1,7 @@
 name: Question Template
 description: 질문이나 도움이 필요할 때 사용하는 템플릿
-title: "[Question]: 질문 제목"
-labels: ["question"]
+title: "[Question] 질문 제목"
+labels: ["💡Question"]
 
 body:
   - type: textarea
