@@ -60,6 +60,9 @@ class VRViewController: UIViewController, ARSCNViewDelegate {
             // 따라서 위에서 이름을 지정해줌
             //임의의 Color을 반환하도록 미리 작성해놓은 random()함수를 이용하여, 가져온 Material 객체의 속성에 접근 후 값 할당
             material?.diffuse.contents = UIColor.random()
+
+            // 화면 dismiss
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
         }
         print("tap 되었습니다아")
     }
