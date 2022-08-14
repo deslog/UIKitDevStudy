@@ -15,7 +15,9 @@
 		3805A88F28A3645F009A34A3 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A88E28A3645F009A34A3 /* ButtonViewController.swift */; };
 		3805A89128A36B5A009A34A3 /* VRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89028A36B5A009A34A3 /* VRView.storyboard */; };
 		3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A89228A36B68009A34A3 /* VRViewController.swift */; };
-		3805A89528A38168009A34A3 /* testImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89428A38168009A34A3 /* testImage.jpeg */; };
+		3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89A28A38C63009A34A3 /* testImage.jpg */; };
+		3805A89D28A38D83009A34A3 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A89C28A38D83009A34A3 /* SuccessViewController.swift */; };
+		3805A89F28A38E9C009A34A3 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89E28A38E9C009A34A3 /* person.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		3805A88E28A3645F009A34A3 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		3805A89028A36B5A009A34A3 /* VRView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VRView.storyboard; sourceTree = "<group>"; };
 		3805A89228A36B68009A34A3 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
-		3805A89428A38168009A34A3 /* testImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpeg; sourceTree = "<group>"; };
+		3805A89A28A38C63009A34A3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
+		3805A89C28A38D83009A34A3 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		3805A89E28A38E9C009A34A3 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 			children = (
 				3805A88E28A3645F009A34A3 /* ButtonViewController.swift */,
 				3805A89228A36B68009A34A3 /* VRViewController.swift */,
+				3805A89C28A38D83009A34A3 /* SuccessViewController.swift */,
 				3805A89028A36B5A009A34A3 /* VRView.storyboard */,
-				3805A89428A38168009A34A3 /* testImage.jpeg */,
+				3805A89E28A38E9C009A34A3 /* person.png */,
+				3805A89A28A38C63009A34A3 /* testImage.jpg */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -159,9 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3805A80C28A264E0009A34A3 /* LaunchScreen.storyboard in Resources */,
-				3805A89528A38168009A34A3 /* testImage.jpeg in Resources */,
+				3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */,
 				3805A89128A36B5A009A34A3 /* VRView.storyboard in Resources */,
 				3805A80928A264E0009A34A3 /* Assets.xcassets in Resources */,
+				3805A89F28A38E9C009A34A3 /* person.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +183,7 @@
 				3805A80028A264DF009A34A3 /* AppDelegate.swift in Sources */,
 				3805A80228A264DF009A34A3 /* SceneDelegate.swift in Sources */,
 				3805A81928A2973F009A34A3 /* UIColor+.swift in Sources */,
+				3805A89D28A38D83009A34A3 /* SuccessViewController.swift in Sources */,
 				3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

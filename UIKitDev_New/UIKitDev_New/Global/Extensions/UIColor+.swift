@@ -18,3 +18,42 @@ extension UIColor {
         return UIColor(red: .random(), green: .random(), blue: .random(), alpha: 1.0)
     }
 }
+
+extension UILabel {
+
+    func setDynamicFont(_ style: UIFont.TextStyle) {
+        self.font = UIFont.preferredFont(forTextStyle: style)
+        self.adjustsFontForContentSizeCategory = true
+        self.numberOfLines = 0
+    }
+
+    func setDynamicFont(for style: UIFont.TextStyle, weight: UIFont.Weight = .regular) {
+        self.font = UIFont.preferredFont(for: style, weight: weight)
+        self.adjustsFontForContentSizeCategory = true
+        self.numberOfLines = 0
+    }
+}
+
+extension UIFont {
+
+    static func preferredFont(for style: TextStyle, weight: Weight) -> UIFont {
+
+        let traits = UITraitCollection(preferredContentSizeCategory: .large)
+        let desc = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style, compatibleWith: traits)
+
+        let font = UIFont.systemFont(ofSize: desc.pointSize, weight: weight)
+
+        let metrics = UIFontMetrics(forTextStyle: style)
+        return metrics.scaledFont(for: font)
+    }
+
+}
+
+extension UIStackView {
+
+    func addArrangedSubviews(_ views: UIView...) {
+        for view in views {
+            addArrangedSubview(view)
+        }
+    }
+}

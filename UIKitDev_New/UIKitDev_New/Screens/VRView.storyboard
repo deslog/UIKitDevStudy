@@ -26,7 +26,6 @@
                     </view>
                     <connections>
                         <outlet property="arscene" destination="l8P-Dq-4fc" id="t2o-zf-5VD"/>
-                        <outlet property="view" destination="5EZ-qb-Rvc" id="aP4-v9-VJo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
