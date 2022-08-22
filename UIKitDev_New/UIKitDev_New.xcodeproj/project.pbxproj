@@ -64,8 +64,6 @@
 			children = (
 				3805A81428A26644009A34A3 /* Screens */,
 				3805A81328A26640009A34A3 /* Global */,
-				3805A7FF28A264DF009A34A3 /* AppDelegate.swift */,
-				3805A80128A264DF009A34A3 /* SceneDelegate.swift */,
 				3805A80828A264E0009A34A3 /* Assets.xcassets */,
 				3805A80A28A264E0009A34A3 /* LaunchScreen.storyboard */,
 				3805A80D28A264E0009A34A3 /* Info.plist */,
@@ -76,6 +74,7 @@
 		3805A81328A26640009A34A3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				385A306D28B3DB1C00A648A0 /* Supports */,
 				3805A81728A2972A009A34A3 /* Extensions */,
 			);
 			path = Global;
@@ -84,10 +83,7 @@
 		3805A81428A26644009A34A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				3805A88E28A3645F009A34A3 /* ButtonViewController.swift */,
-				3805A89228A36B68009A34A3 /* VRViewController.swift */,
-				3805A89028A36B5A009A34A3 /* VRView.storyboard */,
-				3805A89A28A38C63009A34A3 /* testImage.jpg */,
+				385A306A28B3DAEE00A648A0 /* ARKit */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -98,6 +94,42 @@
 				3805A81828A2973F009A34A3 /* UIColor+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		385A306A28B3DAEE00A648A0 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				385A306C28B3DB0800A648A0 /* Screens */,
+				385A306B28B3DAFD00A648A0 /* Resources */,
+			);
+			path = ARKit;
+			sourceTree = "<group>";
+		};
+		385A306B28B3DAFD00A648A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3805A89A28A38C63009A34A3 /* testImage.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		385A306C28B3DB0800A648A0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3805A89228A36B68009A34A3 /* VRViewController.swift */,
+				3805A88E28A3645F009A34A3 /* ButtonViewController.swift */,
+				3805A89028A36B5A009A34A3 /* VRView.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		385A306D28B3DB1C00A648A0 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				3805A7FF28A264DF009A34A3 /* AppDelegate.swift */,
+				3805A80128A264DF009A34A3 /* SceneDelegate.swift */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
