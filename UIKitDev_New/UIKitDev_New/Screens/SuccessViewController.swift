@@ -18,13 +18,6 @@ class SuccessViewController: UIViewController {
         return $0
     }(UIStackView())
 
-//    private let imageView: UIImageView = {
-//        $0.translatesAutoresizingMaskIntoConstraints = false
-//        $0.contentMode = .scaleAspectFit
-//        $0.image = UIImage(named: "person.png")
-//        return $0
-//    }(UIImageView())
-
     private let nameLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "이익수 준장"
@@ -54,13 +47,6 @@ class SuccessViewController: UIViewController {
     // MARK: - Method
 
     private func layout() {
-//        view.addSubview(imageView)
-//        NSLayoutConstraint.activate([
-//            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-//            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            imageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 2)
-//        ])
-
         view.addSubview(stackView)
         stackView.addArrangedSubviews(nameLabel, discriptionLabel)
 
