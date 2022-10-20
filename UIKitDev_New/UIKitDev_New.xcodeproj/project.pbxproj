@@ -18,6 +18,7 @@
 		3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89A28A38C63009A34A3 /* testImage.jpg */; };
 		A7DD1A2728FEAE8A0031841E /* DynamicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A2628FEAE8A0031841E /* DynamicCollectionViewController.swift */; };
 		A7DD1A2928FEBE1E0031841E /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A2828FEBE1E0031841E /* DynamicCollectionViewCell.swift */; };
+		A7DD1A3228FFF0760031841E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3805A89A28A38C63009A34A3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
 		A7DD1A2628FEAE8A0031841E /* DynamicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewController.swift; sourceTree = "<group>"; };
 		A7DD1A2828FEBE1E0031841E /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				3805A81828A2973F009A34A3 /* UIColor+.swift */,
+				A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				3805A80228A264DF009A34A3 /* SceneDelegate.swift in Sources */,
 				3805A81928A2973F009A34A3 /* UIColor+.swift in Sources */,
 				3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */,
+				A7DD1A3228FFF0760031841E /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -382,7 +386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

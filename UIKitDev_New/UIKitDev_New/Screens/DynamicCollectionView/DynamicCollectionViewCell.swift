@@ -17,6 +17,8 @@ class DynamicCollectionViewCell: UICollectionViewCell {
 
     private lazy var newsTitleLabel: UILabel = {
         $0.text = "우리는 왜 '타다'에 선뜻 타지 못했을까?"
+        $0.backgroundColor = .yellow
+        $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.preferredFont(forTextStyle: .title3)
         $0.numberOfLines = 0
         return $0
@@ -24,6 +26,8 @@ class DynamicCollectionViewCell: UICollectionViewCell {
 
     private lazy var newsCategoryLabel: UILabel = {
         $0.text = "시사"
+        $0.backgroundColor = .green
+        $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.preferredFont(forTextStyle: .caption2)
         return $0
     }(UILabel())
