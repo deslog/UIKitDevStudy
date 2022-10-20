@@ -35,7 +35,7 @@ class NewsFeedsViewController: UIViewController {
     }()
 
     private let collectionView: UICollectionView = {
-        let layout = CollectionViewLeftAlignFlowLayout()
+        let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .systemPink
@@ -47,10 +47,17 @@ class NewsFeedsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureCollectionview()
         setupLayout()
     }
 
     // MARK: private func
+
+    private func configureCollectionview() {
+        collectionView.register(NewsFeedsCollectionViewCell.self, forCellWithReuseIdentifier: NewsFeedsCollectionViewCell.identifier)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
 
     private func setupLayout() {
         [dateLabel, newsFeedsTitleLabel, titleDescriptionLabel, collectionView].forEach { view.addSubview($0) }
@@ -70,5 +77,36 @@ class NewsFeedsViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
+}
 
+extension NewsFeedsViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsFeedsCollectionViewCell.identifier, for: indexPath) as? NewsFeedsCollectionViewCell
+        cell?.setupLayout()
+        return cell ?? UICollectionViewCell()
+    }
+}
+
+extension NewsFeedsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width
+        let numberOfItemsPerRow : CGFloat = 5
+        let spacing: CGFloat = 20
+        let availableWidth = width - spacing * (numberOfItemsPerRow + 1)
+        let itemDimension = floor(availableWidth / numberOfItemsPerRow)
+
+        return CGSize(width: itemDimension, height: 180)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
