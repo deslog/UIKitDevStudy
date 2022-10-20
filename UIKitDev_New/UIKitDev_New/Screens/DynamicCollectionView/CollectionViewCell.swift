@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DynamicCollectionViewCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
 
     // MARK: properties
 

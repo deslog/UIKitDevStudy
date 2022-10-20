@@ -1,5 +1,5 @@
 //
-//  DynamicCollectionViewController.swift
+//  CollectionViewController.swift
 //  UIKitDev_New
 //
 //  Created by 이지수 on 2022/10/18.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-class DynamicCollectionViewController: UIViewController {
+class CollectionViewController: UIViewController {
 
     // MARK: view
 
@@ -35,7 +35,7 @@ class DynamicCollectionViewController: UIViewController {
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(DynamicCollectionViewCell.self, forCellWithReuseIdentifier: DynamicCollectionViewCell.identifier)
+        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
     }
 
     private func setupLayout() {
@@ -51,7 +51,7 @@ class DynamicCollectionViewController: UIViewController {
 
 // MARK: collectionView delegate
 
-extension DynamicCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
         let numberOfItemsPerRow : CGFloat = 5
@@ -73,13 +73,13 @@ extension DynamicCollectionViewController: UICollectionViewDelegateFlowLayout {
 
 // MARK: datasource
 
-extension DynamicCollectionViewController: UICollectionViewDataSource {
+extension CollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         10
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DynamicCollectionViewCell.identifier, for: indexPath) as? DynamicCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as? CollectionViewCell
         cell?.setupLayout()
         return cell ?? UICollectionViewCell()
     }
