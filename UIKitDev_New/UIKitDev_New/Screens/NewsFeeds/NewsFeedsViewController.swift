@@ -34,6 +34,14 @@ class NewsFeedsViewController: UIViewController {
         return titleDescriptionLabel
     }()
 
+    private let collectionView: UICollectionView = {
+        let layout = CollectionViewLeftAlignFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .systemPink
+        return collectionView
+    }()
+
     // MARK: life cycle
 
     override func viewDidLoad() {
@@ -45,7 +53,7 @@ class NewsFeedsViewController: UIViewController {
     // MARK: private func
 
     private func setupLayout() {
-        [dateLabel, newsFeedsTitleLabel, titleDescriptionLabel].forEach { view.addSubview($0) }
+        [dateLabel, newsFeedsTitleLabel, titleDescriptionLabel, collectionView].forEach { view.addSubview($0) }
         NSLayoutConstraint.activate([
             dateLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60.0),
             dateLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20.0),
@@ -54,7 +62,12 @@ class NewsFeedsViewController: UIViewController {
             newsFeedsTitleLabel.leadingAnchor.constraint(equalTo: dateLabel.leadingAnchor),
 
             titleDescriptionLabel.topAnchor.constraint(equalTo: newsFeedsTitleLabel.bottomAnchor, constant: 6.0),
-            titleDescriptionLabel.leadingAnchor.constraint(equalTo: newsFeedsTitleLabel.leadingAnchor)
+            titleDescriptionLabel.leadingAnchor.constraint(equalTo: newsFeedsTitleLabel.leadingAnchor),
+
+            collectionView.topAnchor.constraint(equalTo: titleDescriptionLabel.bottomAnchor, constant: 30.0),
+            collectionView.leadingAnchor.constraint(equalTo: dateLabel.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20.0),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 
