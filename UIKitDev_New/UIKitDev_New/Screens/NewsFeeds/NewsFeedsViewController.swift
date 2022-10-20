@@ -14,6 +14,7 @@ struct newsData {
 
 class NewsFeedsViewController: UIViewController {
 
+    // TODO: data 재정렬 어떻게 하는지 살펴보자.
     let data: [newsData] = [
         newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
         newsData(newsTitle: "버팀목 수출마저 20% ↓…올 무역적자 327억달러", newsCategory: "시사"),
