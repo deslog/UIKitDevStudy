@@ -16,6 +16,8 @@
 		3805A89128A36B5A009A34A3 /* VRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89028A36B5A009A34A3 /* VRView.storyboard */; };
 		3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A89228A36B68009A34A3 /* VRViewController.swift */; };
 		3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89A28A38C63009A34A3 /* testImage.jpg */; };
+		A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */; };
+		A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */; };
 		A7DD1A2728FEAE8A0031841E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A2628FEAE8A0031841E /* CollectionViewController.swift */; };
 		A7DD1A2928FEBE1E0031841E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A2828FEBE1E0031841E /* CollectionViewCell.swift */; };
 		A7DD1A3228FFF0760031841E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */; };
@@ -33,6 +35,8 @@
 		3805A89028A36B5A009A34A3 /* VRView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VRView.storyboard; sourceTree = "<group>"; };
 		3805A89228A36B68009A34A3 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
 		3805A89A28A38C63009A34A3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
+		A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsViewController.swift; sourceTree = "<group>"; };
+		A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7DD1A2628FEAE8A0031841E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A7DD1A2828FEBE1E0031841E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		3805A81428A26644009A34A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A77F46DA2901922200BE8815 /* NewsFeeds */,
 				A7DD1A2528FEAE6E0031841E /* DynamicCollectionView */,
 				A7DD1A2428FEAE570031841E /* ARKit */,
 			);
@@ -103,6 +108,15 @@
 				A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A77F46DA2901922200BE8815 /* NewsFeeds */ = {
+			isa = PBXGroup;
+			children = (
+				A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */,
+				A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */,
+			);
+			path = NewsFeeds;
 			sourceTree = "<group>";
 		};
 		A7DD1A2428FEAE570031841E /* ARKit */ = {
@@ -198,9 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3805A88F28A3645F009A34A3 /* ButtonViewController.swift in Sources */,
+				A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */,
 				3805A80028A264DF009A34A3 /* AppDelegate.swift in Sources */,
 				A7DD1A2728FEAE8A0031841E /* CollectionViewController.swift in Sources */,
 				A7DD1A2928FEBE1E0031841E /* CollectionViewCell.swift in Sources */,
+				A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */,
 				3805A80228A264DF009A34A3 /* SceneDelegate.swift in Sources */,
 				3805A81928A2973F009A34A3 /* UIColor+.swift in Sources */,
 				3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */,

@@ -57,3 +57,17 @@ extension UIStackView {
         }
     }
 }
+
+extension Date {
+    /**
+     # formatted
+     - Parameters:
+        - format: 변형할 DateFormat
+     - Note: DateFormat으로 변형한 String 반환
+    */
+    public func formatted(_ format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+}
