@@ -18,25 +18,24 @@ class NewsFeedsCollectionViewCell: UICollectionViewCell {
     private let newsBackgroundView: UIImageView = {
         let backgroundView = UIImageView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        backgroundView.layer.cornerRadius = 30.0
         backgroundView.contentMode = .scaleToFill
         backgroundView.clipsToBounds = true
-        backgroundView.backgroundColor = .red
+        backgroundView.backgroundColor = .systemGray
         return backgroundView
     }()
 
     var newsTitleLabel: UILabel = {
         $0.text = "우리는 왜 '타다'에 선뜻 타지 못했을까?"
         $0.numberOfLines = 0
-        $0.backgroundColor = .yellow
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = UIFont.preferredFont(forTextStyle: .title3)
+        $0.font = UIFont.preferredFont(forTextStyle: .title2)
         $0.numberOfLines = 0
         return $0
     }(UILabel())
 
     var newsCategoryLabel: UILabel = {
         $0.text = "시사"
-        $0.backgroundColor = .green
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.preferredFont(forTextStyle: .caption2)
         return $0
@@ -52,13 +51,17 @@ class NewsFeedsCollectionViewCell: UICollectionViewCell {
             newsBackgroundView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             newsBackgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
 
-            newsTitleLabel.topAnchor.constraint(equalTo: newsBackgroundView.topAnchor, constant: 14.0),
-            newsTitleLabel.leadingAnchor.constraint(equalTo: newsBackgroundView.leadingAnchor, constant: 14.0),
-            newsTitleLabel.trailingAnchor.constraint(equalTo: newsBackgroundView.trailingAnchor, constant: -14.0),
+            newsTitleLabel.topAnchor.constraint(equalTo: newsBackgroundView.topAnchor, constant: 16.0),
+            newsTitleLabel.leadingAnchor.constraint(equalTo: newsBackgroundView.leadingAnchor, constant: 16.0),
+            newsTitleLabel.trailingAnchor.constraint(equalTo: newsBackgroundView.trailingAnchor, constant: -16.0),
 
             newsCategoryLabel.leadingAnchor.constraint(equalTo: newsTitleLabel.leadingAnchor),
-            newsCategoryLabel.bottomAnchor.constraint(equalTo: newsBackgroundView.bottomAnchor, constant: -15.0)
+            newsCategoryLabel.bottomAnchor.constraint(equalTo: newsBackgroundView.bottomAnchor, constant: -16.0)
         ])
     }
 
+    func setData(newsTitle: String, newsCategory: String) {
+        newsTitleLabel.text = newsTitle
+        newsCategoryLabel.text = newsCategory
+    }
 }
