@@ -18,7 +18,6 @@ class NewsFeedsCollectionViewCell: UICollectionViewCell {
     private let newsBackgroundView: UIImageView = {
         let backgroundView = UIImageView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.layer.cornerRadius = 30.0
         backgroundView.contentMode = .scaleToFill
         backgroundView.clipsToBounds = true
         backgroundView.backgroundColor = .systemGray
