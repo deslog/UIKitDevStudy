@@ -18,42 +18,27 @@ class NewsFeedsViewController: UIViewController {
     var data: [newsData] = [
         newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
         newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "버팀목 수출마저 20% ↓…올 무역적자 327억달러", newsCategory: "시사"),
-        newsData(newsTitle: "러시아의 화학자 드미트리 멘델레예프…원소를 원자량 순서로 배열해 주기율표 창안", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "서인 정권의 '향명배금' 정책 고집…국제질서 변화 못읽어 정묘·병자호란 자초", newsCategory: "경제"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "경제"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "경제"),
         newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
         newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
         newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "실수와 오해가 친구를 위태롭게 할 수도 있다", newsCategory: "사회"),
-        newsData(newsTitle: "금리 오르면 채권값 떨어지는 원리 이해해야", newsCategory: "지역")
+        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사")
     ]
 
     private lazy var newdata = sortdata(data)
@@ -102,59 +87,71 @@ class NewsFeedsViewController: UIViewController {
     // MARK: private func
 
     private func sortdata(_ data: [newsData]) -> [newsData] {
-//        var count = 0
-//        var temp = [newsData]()
-//        var newData = [newsData]()
-//
-//        for i in 0..<data.count {
-//            if count < 5 {
-//                if data[i].newsTitle.count >= 30, count + 2 <= 5 {
-//                    count += 2
-//                    newData.append(data[i])
-//                } else if data[i].newsTitle.count >= 30, count + 2 > 5 {
-//                    temp.append(data[i])
-//                } else if data[i].newsTitle.count < 30 {
-//                    count += 1
-//                    newData.append(data[i])
-//                }
-//            }
-//
-//            if count == 5 {
-//                count = 0
-//            }
-//        }
-
-        var long = data.filter { $0.newsTitle.count >= 30 }.map { $0 }
-        var short = data.filter { $0.newsTitle.count < 30}.map { $0 }
-
+        var short = data.filter { $0.newsTitle.count < 30 }.map { $0 }
+        var long = data.filter { $0.newsTitle.count >= 40 }.map { $0 }
+        let longcount = long.count
+        var mid = [newsData]()
         var newdata = [newsData]()
-        var longCount = long.count
-        var shortCount = short.count
+        var lastloop = 0
 
-        for _ in 0..<longCount/2 {
-            if longCount % 2 == 1 {
-                newdata.append(long.removeLast())
-                newdata.append(short.removeLast())
-                newdata.append(short.removeLast())
-                newdata.append(short.removeLast())
+        if long.count / 2 > short.count {
+            lastloop = (long.count / 2) - short.count
+            print("lastloop \(lastloop)")
+        } else if long.count / 2 + 2 <= short.count {
+            for _ in 0..<(long.count / 2) / 2 {
+                mid.append(short.removeLast())
+                mid.append(short.removeLast())
             }
-
-            for _ in 0..<2 {
-                newdata.append(long.removeLast())
-            }
-
-            newdata.append(short.removeLast())
         }
 
-        for i in short {
-            newdata.append(i)
+        if lastloop != 0 {
+            for _ in 0..<lastloop {
+                short.insert(newsData(newsTitle: "-", newsCategory: "-"), at: 0)
+            }
         }
 
+        for i in 0..<longcount/2 {
+            if long.count == 1 {
+                break
+            }
+
+            if i % 3 == 0 {
+                newdata.append(long.removeLast())
+                newdata.append(long.removeLast())
+                newdata.append(short.removeLast())
+            } else if i % 3 == 1 {
+                newdata.append(short.removeLast())
+                newdata.append(long.removeLast())
+                newdata.append(long.removeLast())
+            } else {
+                newdata.append(long.removeLast())
+                newdata.append(short.removeLast())
+                newdata.append(long.removeLast())
+            }
+        }
+
+        if mid.count != 0 {
+            for i in stride(from: Int.random(in: 0...8), through: newdata.count, by: 5) {
+                if newdata.count > i {
+                    if newdata[i].newsTitle.count >= 40 {
+                        newdata.insert(mid.removeLast(), at: i)
+                        newdata.insert(mid.removeLast(), at: i+1)
+                        newdata.append(newdata[i+2])
+                        newdata.remove(at: i+2)
+                    }
+                }
+            }
+        }
+
+        for s in short {
+            newdata.append(s)
+        }
         return newdata
     }
 
     private func configureCollectionview() {
         collectionView.register(NewsFeedsCollectionViewCell.self, forCellWithReuseIdentifier: NewsFeedsCollectionViewCell.identifier)
+        collectionView.register(AddImageCollectionViewCell.self, forCellWithReuseIdentifier: AddImageCollectionViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -185,10 +182,17 @@ extension NewsFeedsViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsFeedsCollectionViewCell.identifier, for: indexPath) as? NewsFeedsCollectionViewCell else { return UICollectionViewCell() }
-        cell.setupLayout()
-        cell.setData(newsTitle: newdata[indexPath.row].newsTitle, newsCategory: newdata[indexPath.row].newsCategory)
-        return cell
+
+        if newdata[indexPath.row].newsTitle == "-" {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AddImageCollectionViewCell.identifier, for: indexPath) as? AddImageCollectionViewCell else { return UICollectionViewCell() }
+            cell.setupLayout()
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsFeedsCollectionViewCell.identifier, for: indexPath) as? NewsFeedsCollectionViewCell else { return UICollectionViewCell() }
+            cell.setupLayout()
+            cell.setData(newsTitle: newdata[indexPath.row].newsTitle, newsCategory: newdata[indexPath.row].newsCategory)
+            return cell
+        }
     }
 }
 
