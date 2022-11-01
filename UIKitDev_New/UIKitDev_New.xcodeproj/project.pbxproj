@@ -16,6 +16,10 @@
 		3805A89128A36B5A009A34A3 /* VRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89028A36B5A009A34A3 /* VRView.storyboard */; };
 		3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A89228A36B68009A34A3 /* VRViewController.swift */; };
 		3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89A28A38C63009A34A3 /* testImage.jpg */; };
+		381AB43A291141EB00620635 /* GotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB439291141EB00620635 /* GotoView.swift */; };
+		381AB43C2911420C00620635 /* GotoSomewhereButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB43B2911420C00620635 /* GotoSomewhereButton.swift */; };
+		381AB43F2911423F00620635 /* GotoNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB43E2911423F00620635 /* GotoNewsViewController.swift */; };
+		381AB44329115DBF00620635 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 381AB44229115DBF00620635 /* Lottie */; };
 		389B57A4290994BB0067620A /* AddImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B57A3290994BB0067620A /* AddImageCollectionViewCell.swift */; };
 		A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */; };
 		A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */; };
@@ -36,6 +40,9 @@
 		3805A89028A36B5A009A34A3 /* VRView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VRView.storyboard; sourceTree = "<group>"; };
 		3805A89228A36B68009A34A3 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
 		3805A89A28A38C63009A34A3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
+		381AB439291141EB00620635 /* GotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoView.swift; sourceTree = "<group>"; };
+		381AB43B2911420C00620635 /* GotoSomewhereButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoSomewhereButton.swift; sourceTree = "<group>"; };
+		381AB43E2911423F00620635 /* GotoNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoNewsViewController.swift; sourceTree = "<group>"; };
 		389B57A3290994BB0067620A /* AddImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsViewController.swift; sourceTree = "<group>"; };
 		A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381AB44329115DBF00620635 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,7 @@
 		3805A81428A26644009A34A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				381AB43D2911421700620635 /* NewsDrawerView */,
 				A77F46DA2901922200BE8815 /* NewsFeeds */,
 				A7DD1A2528FEAE6E0031841E /* DynamicCollectionView */,
 				A7DD1A2428FEAE570031841E /* ARKit */,
@@ -110,6 +119,24 @@
 				A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		381AB43D2911421700620635 /* NewsDrawerView */ = {
+			isa = PBXGroup;
+			children = (
+				381AB4402911424200620635 /* Componenets */,
+				381AB43E2911423F00620635 /* GotoNewsViewController.swift */,
+			);
+			path = NewsDrawerView;
+			sourceTree = "<group>";
+		};
+		381AB4402911424200620635 /* Componenets */ = {
+			isa = PBXGroup;
+			children = (
+				381AB439291141EB00620635 /* GotoView.swift */,
+				381AB43B2911420C00620635 /* GotoSomewhereButton.swift */,
+			);
+			path = Componenets;
 			sourceTree = "<group>";
 		};
 		A77F46DA2901922200BE8815 /* NewsFeeds */ = {
@@ -158,6 +185,9 @@
 			dependencies = (
 			);
 			name = UIKitDev_New;
+			packageProductDependencies = (
+				381AB44229115DBF00620635 /* Lottie */,
+			);
 			productName = UIKitDev_New;
 			productReference = 3805A7FC28A264DF009A34A3 /* UIKitDev_New.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 3805A7F328A264DF009A34A3;
+			packageReferences = (
+				381AB44129115DBF00620635 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 3805A7FD28A264DF009A34A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,13 +249,16 @@
 			files = (
 				3805A88F28A3645F009A34A3 /* ButtonViewController.swift in Sources */,
 				A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */,
+				381AB43C2911420C00620635 /* GotoSomewhereButton.swift in Sources */,
 				3805A80028A264DF009A34A3 /* AppDelegate.swift in Sources */,
 				A7DD1A2728FEAE8A0031841E /* CollectionViewController.swift in Sources */,
 				389B57A4290994BB0067620A /* AddImageCollectionViewCell.swift in Sources */,
 				A7DD1A2928FEBE1E0031841E /* CollectionViewCell.swift in Sources */,
 				A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */,
+				381AB43F2911423F00620635 /* GotoNewsViewController.swift in Sources */,
 				3805A80228A264DF009A34A3 /* SceneDelegate.swift in Sources */,
 				3805A81928A2973F009A34A3 /* UIColor+.swift in Sources */,
+				381AB43A291141EB00620635 /* GotoView.swift in Sources */,
 				3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */,
 				A7DD1A3228FFF0760031841E /* UIView+Constraints.swift in Sources */,
 			);
@@ -432,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		381AB44129115DBF00620635 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		381AB44229115DBF00620635 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 381AB44129115DBF00620635 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3805A7F428A264DF009A34A3 /* Project object */;
 }
