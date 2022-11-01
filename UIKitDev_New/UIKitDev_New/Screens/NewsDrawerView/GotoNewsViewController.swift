@@ -13,13 +13,20 @@ class GotoNewsViewController: UIViewController {
         super.viewDidLoad()
 
         let gotoview = GotoView()
+        gotoview.changeLabelText(greetingComments: "안녕!\n난지수야",
+                                                  lottieImageTitle: "",
+                                                  buttonImage: UIImage(systemName: "swift") ?? UIImage(),
+                                                  buttonTitle: "asdfa")
+
         gotoview.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(gotoview)
         gotoview.constraint(top: self.view.topAnchor,
                             bottom: self.view.bottomAnchor,
                             centerX: self.view.centerXAnchor,
+                            centerY: self.view.centerYAnchor,
                             padding: UIEdgeInsets(top: 230, left: 0, bottom: 204, right: 0))
+        gotoview.constraint(.widthAnchor, constant: 400)
 
         // Do any additional setup after loading the view.
     }

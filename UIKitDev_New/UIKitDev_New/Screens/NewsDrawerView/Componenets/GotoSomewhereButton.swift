@@ -17,7 +17,7 @@ final class GotoSomewhereButton: UIButton {
         }
     }
 
-    var image: UIImage? = UIImage(systemName: "ico_news") ?? nil {
+    var image: UIImage? = UIImage(systemName: "") ?? nil {
         didSet {
             configuration?.image = image
         }
