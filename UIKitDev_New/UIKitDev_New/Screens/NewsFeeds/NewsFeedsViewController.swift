@@ -15,31 +15,61 @@ struct newsData {
 class NewsFeedsViewController: UIViewController {
 
     // TODO: data 재정렬 어떻게 하는지 살펴보자.
+    // long.count/2가 더 많은 경우
     var data: [newsData] = [
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
-        newsData(newsTitle: "급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사")
+        newsData(newsTitle: "1인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "2인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "3인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "4인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "5인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+        newsData(newsTitle: "1급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+        newsData(newsTitle: "2급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사")
     ]
+
+    // short.count가 더 많은 경우
+//    var data: [newsData] = [
+//        newsData(newsTitle: "1인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "2인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "3인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "3인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "3인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "3인류보다 로봇 진화 속도가 더 빠르대요, 청소로봇은 '루시'…생각하는 로봇 등장", newsCategory: "시사"),
+//        newsData(newsTitle: "1급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "2급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사"),
+//        newsData(newsTitle: "3급락한 카카오뱅크 주식, 카뱅이 사들이는 이유는", newsCategory: "시사")
+//    ]
 
     private lazy var newdata = sortdata(data)
 
@@ -51,7 +81,6 @@ class NewsFeedsViewController: UIViewController {
         dateLabel.text = Date().formatted("EEEE, MMM d")
         return dateLabel
     }()
-
     private let newsFeedsTitleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -60,7 +89,6 @@ class NewsFeedsViewController: UIViewController {
 
         return titleLabel
     }()
-
     private let titleDescriptionLabel: UILabel = {
         let titleDescriptionLabel = UILabel()
         titleDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -84,37 +112,88 @@ class NewsFeedsViewController: UIViewController {
         setupLayout()
     }
 
-    // MARK: private func
+    // MARK: 로직짜보자,,
 
     private func sortdata(_ data: [newsData]) -> [newsData] {
-        var short = data.filter { $0.newsTitle.count < 30 }.map { $0 }
-        var long = data.filter { $0.newsTitle.count >= 40 }.map { $0 }
-        let longcount = long.count
-        var mid = [newsData]()
+        let short = data.filter { $0.newsTitle.count < 30 }.map { $0 }
+        let long = data.filter { $0.newsTitle.count >= 40 }.map { $0 }
         var newdata = [newsData]()
-        var lastloop = 0
-
-        if long.count / 2 > short.count {
-            lastloop = (long.count / 2) - short.count
-            print("lastloop \(lastloop)")
-        } else if long.count / 2 + 2 <= short.count {
-            for _ in 0..<(long.count / 2) / 2 {
-                mid.append(short.removeLast())
-                mid.append(short.removeLast())
-            }
+        if long.count / 2 <= short.count {
+            newdata = calculateMoreShort(short, long)
+        } else {
+            newdata = calculateMoreLong(short, long)
         }
 
-        if lastloop != 0 {
-            for _ in 0..<lastloop {
-                short.insert(newsData(newsTitle: "-", newsCategory: "-"), at: 0)
-            }
+        return newdata
+    }
+
+    // MARK: calc
+
+    private func calculateMoreLong( _ short: [newsData], _ long: [newsData]) -> [newsData] {
+        var newdata = [newsData]()
+        var long = long
+        var short = short
+        let longcount = long.count
+        var needShortCount = 0
+
+        if long.count % 2 == 0 {
+            needShortCount = longcount/2  - (short.count+1)
+        } else {
+            needShortCount = longcount/2  - (short.count)
+        }
+
+        for _ in 0..<needShortCount {
+            short.insert(newsData(newsTitle: "-", newsCategory: "-"), at: 0)
         }
 
         for i in 0..<longcount/2 {
-            if long.count == 1 {
-                break
+            if i % 3 == 0 {
+                newdata.append(long.removeLast())
+                newdata.append(long.removeLast())
+                if i == (longcount/2-1) {
+                    continue
+                } else {
+                    newdata.append(short.removeLast())
+                }
+            } else if i % 3 == 1 {
+                if i == (longcount/2-1) {
+                    continue
+                } else {
+                    newdata.append(short.removeLast())
+                }
+                newdata.append(long.removeLast())
+                newdata.append(long.removeLast())
+            } else {
+                newdata.append(long.removeLast())
+                if i == (longcount/2-1) {
+                    continue
+                } else {
+                    newdata.append(short.removeLast())
+                }
+                newdata.append(long.removeLast())
             }
+        }
 
+        if !long.isEmpty {
+            newdata.append(long.removeLast())
+        }
+
+        if !short.isEmpty {
+            for _ in 0..<short.count {
+                newdata.append(short.removeLast())
+            }
+        }
+
+        return newdata
+    }
+
+    private func calculateMoreShort(_ short: [newsData], _ long: [newsData]) -> [newsData] {
+        var newdata = [newsData]()
+        var long = long
+        var short = short
+        let longcount = long.count
+
+        for i in 0..<longcount/2 {
             if i % 3 == 0 {
                 newdata.append(long.removeLast())
                 newdata.append(long.removeLast())
@@ -130,22 +209,16 @@ class NewsFeedsViewController: UIViewController {
             }
         }
 
-        if mid.count != 0 {
-            for i in stride(from: Int.random(in: 0...8), through: newdata.count, by: 5) {
-                if newdata.count > i {
-                    if newdata[i].newsTitle.count >= 40 {
-                        newdata.insert(mid.removeLast(), at: i)
-                        newdata.insert(mid.removeLast(), at: i+1)
-                        newdata.append(newdata[i+2])
-                        newdata.remove(at: i+2)
-                    }
-                }
+        if !long.isEmpty {
+            newdata.append(long.removeLast())
+        }
+
+        if !short.isEmpty {
+            for _ in 0..<short.count {
+                newdata.append(short.removeLast())
             }
         }
 
-        for s in short {
-            newdata.append(s)
-        }
         return newdata
     }
 

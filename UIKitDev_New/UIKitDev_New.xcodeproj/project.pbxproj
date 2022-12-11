@@ -16,12 +16,27 @@
 		3805A89128A36B5A009A34A3 /* VRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89028A36B5A009A34A3 /* VRView.storyboard */; };
 		3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A89228A36B68009A34A3 /* VRViewController.swift */; };
 		3805A89B28A38C63009A34A3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3805A89A28A38C63009A34A3 /* testImage.jpg */; };
+		380DC75B2927321200BA93E6 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC75A2927321200BA93E6 /* ScrollViewController.swift */; };
 		381AB43A291141EB00620635 /* GotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB439291141EB00620635 /* GotoView.swift */; };
 		381AB43C2911420C00620635 /* GotoSomewhereButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB43B2911420C00620635 /* GotoSomewhereButton.swift */; };
 		381AB43F2911423F00620635 /* GotoNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AB43E2911423F00620635 /* GotoNewsViewController.swift */; };
 		381AB44329115DBF00620635 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 381AB44229115DBF00620635 /* Lottie */; };
 		381AB44529115E8200620635 /* mp4TempFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 381AB44429115E8200620635 /* mp4TempFile.json */; };
+		384DF05229447FBE005C31D8 /* BubblePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DF05129447FBE005C31D8 /* BubblePickerViewController.swift */; };
+		384DF05629448171005C31D8 /* SIFloatingCollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DF05529448171005C31D8 /* SIFloatingCollectionScene.swift */; };
+		384DF05829448187005C31D8 /* SIFloatingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DF05729448187005C31D8 /* SIFloatingNode.swift */; };
+		384DF05A294481DB005C31D8 /* BubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DF059294481DB005C31D8 /* BubbleNode.swift */; };
+		384DF05C294481EF005C31D8 /* BubbleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DF05B294481EF005C31D8 /* BubbleScene.swift */; };
+		3851FBFE291297B600CF3E89 /* DaBuSoonDaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851FBFD291297B600CF3E89 /* DaBuSoonDaButton.swift */; };
+		3851FC012912984900CF3E89 /* DaBuSoonDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851FC002912984900CF3E89 /* DaBuSoonDaViewController.swift */; };
 		389B57A4290994BB0067620A /* AddImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B57A3290994BB0067620A /* AddImageCollectionViewCell.swift */; };
+		38EDAA45292D2174007EFFA4 /* ChooseInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDAA44292D2174007EFFA4 /* ChooseInterestViewController.swift */; };
+		38EDAA4A292D32EA007EFFA4 /* CategoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDAA49292D32EA007EFFA4 /* CategoryComponent.swift */; };
+		38EE2E01291B325200C3AE0C /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE2E00291B325200C3AE0C /* UIViewController+.swift */; };
+		38EF7C622938D32C00347DE4 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF7C612938D32C00347DE4 /* PageControlViewController.swift */; };
+		38EF7C68293B429F00347DE4 /* SelectUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF7C67293B429F00347DE4 /* SelectUIViewViewController.swift */; };
+		38EF7C6B293EC0E000347DE4 /* PenGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF7C6A293EC0E000347DE4 /* PenGestureViewController.swift */; };
+		38EF7C6F293ECB3200347DE4 /* ScrollAndButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF7C6E293ECB3200347DE4 /* ScrollAndButtonViewController.swift */; };
 		A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */; };
 		A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */; };
 		A7DD1A2728FEAE8A0031841E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD1A2628FEAE8A0031841E /* CollectionViewController.swift */; };
@@ -41,11 +56,26 @@
 		3805A89028A36B5A009A34A3 /* VRView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VRView.storyboard; sourceTree = "<group>"; };
 		3805A89228A36B68009A34A3 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
 		3805A89A28A38C63009A34A3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
+		380DC75A2927321200BA93E6 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		381AB439291141EB00620635 /* GotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoView.swift; sourceTree = "<group>"; };
 		381AB43B2911420C00620635 /* GotoSomewhereButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoSomewhereButton.swift; sourceTree = "<group>"; };
 		381AB43E2911423F00620635 /* GotoNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoNewsViewController.swift; sourceTree = "<group>"; };
 		381AB44429115E8200620635 /* mp4TempFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mp4TempFile.json; sourceTree = "<group>"; };
+		384DF05129447FBE005C31D8 /* BubblePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblePickerViewController.swift; sourceTree = "<group>"; };
+		384DF05529448171005C31D8 /* SIFloatingCollectionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIFloatingCollectionScene.swift; sourceTree = "<group>"; };
+		384DF05729448187005C31D8 /* SIFloatingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIFloatingNode.swift; sourceTree = "<group>"; };
+		384DF059294481DB005C31D8 /* BubbleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
+		384DF05B294481EF005C31D8 /* BubbleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleScene.swift; sourceTree = "<group>"; };
+		3851FBFD291297B600CF3E89 /* DaBuSoonDaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaBuSoonDaButton.swift; sourceTree = "<group>"; };
+		3851FC002912984900CF3E89 /* DaBuSoonDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaBuSoonDaViewController.swift; sourceTree = "<group>"; };
 		389B57A3290994BB0067620A /* AddImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		38EDAA44292D2174007EFFA4 /* ChooseInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseInterestViewController.swift; sourceTree = "<group>"; };
+		38EDAA49292D32EA007EFFA4 /* CategoryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryComponent.swift; sourceTree = "<group>"; };
+		38EE2E00291B325200C3AE0C /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		38EF7C612938D32C00347DE4 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
+		38EF7C67293B429F00347DE4 /* SelectUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUIViewViewController.swift; sourceTree = "<group>"; };
+		38EF7C6A293EC0E000347DE4 /* PenGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenGestureViewController.swift; sourceTree = "<group>"; };
+		38EF7C6E293ECB3200347DE4 /* ScrollAndButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAndButtonViewController.swift; sourceTree = "<group>"; };
 		A77F46DB2901924C00BE8815 /* NewsFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsViewController.swift; sourceTree = "<group>"; };
 		A77F46DD2901926400BE8815 /* NewsFeedsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7DD1A2628FEAE8A0031841E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +136,15 @@
 		3805A81428A26644009A34A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				384DF05029447FA8005C31D8 /* SpriteKit */,
+				38EF7C6C293ECB1600347DE4 /* ScrollAndButton */,
+				38EF7C69293EC0CE00347DE4 /* PenGestureView */,
+				38EF7C66293B428900347DE4 /* SelectUIView */,
+				38EF7C602938D31100347DE4 /* pageControl */,
+				38EDAA43292D2163007EFFA4 /* BigScroll */,
+				380DC759292731FA00BA93E6 /* scrollview */,
+				38EE2DFF291B324400C3AE0C /* AlertCustom */,
+				3851FBFC2912979D00CF3E89 /* UIButton */,
 				381AB43D2911421700620635 /* NewsDrawerView */,
 				A77F46DA2901922200BE8815 /* NewsFeeds */,
 				A7DD1A2528FEAE6E0031841E /* DynamicCollectionView */,
@@ -121,6 +160,14 @@
 				A7DD1A3128FFF0760031841E /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		380DC759292731FA00BA93E6 /* scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				380DC75A2927321200BA93E6 /* ScrollViewController.swift */,
+			);
+			path = scrollview;
 			sourceTree = "<group>";
 		};
 		381AB43D2911421700620635 /* NewsDrawerView */ = {
@@ -140,6 +187,92 @@
 				381AB43B2911420C00620635 /* GotoSomewhereButton.swift */,
 			);
 			path = Componenets;
+			sourceTree = "<group>";
+		};
+		384DF05029447FA8005C31D8 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				384DF05429448067005C31D8 /* BubbleNode */,
+				384DF05329448038005C31D8 /* SIFloatingScene */,
+				384DF05129447FBE005C31D8 /* BubblePickerViewController.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		384DF05329448038005C31D8 /* SIFloatingScene */ = {
+			isa = PBXGroup;
+			children = (
+				384DF05529448171005C31D8 /* SIFloatingCollectionScene.swift */,
+				384DF05729448187005C31D8 /* SIFloatingNode.swift */,
+			);
+			path = SIFloatingScene;
+			sourceTree = "<group>";
+		};
+		384DF05429448067005C31D8 /* BubbleNode */ = {
+			isa = PBXGroup;
+			children = (
+				384DF059294481DB005C31D8 /* BubbleNode.swift */,
+				384DF05B294481EF005C31D8 /* BubbleScene.swift */,
+			);
+			path = BubbleNode;
+			sourceTree = "<group>";
+		};
+		3851FBFC2912979D00CF3E89 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				3851FBFD291297B600CF3E89 /* DaBuSoonDaButton.swift */,
+				3851FC002912984900CF3E89 /* DaBuSoonDaViewController.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		38EDAA43292D2163007EFFA4 /* BigScroll */ = {
+			isa = PBXGroup;
+			children = (
+				38EDAA44292D2174007EFFA4 /* ChooseInterestViewController.swift */,
+				38EDAA49292D32EA007EFFA4 /* CategoryComponent.swift */,
+			);
+			path = BigScroll;
+			sourceTree = "<group>";
+		};
+		38EE2DFF291B324400C3AE0C /* AlertCustom */ = {
+			isa = PBXGroup;
+			children = (
+				38EE2E00291B325200C3AE0C /* UIViewController+.swift */,
+			);
+			path = AlertCustom;
+			sourceTree = "<group>";
+		};
+		38EF7C602938D31100347DE4 /* pageControl */ = {
+			isa = PBXGroup;
+			children = (
+				38EF7C612938D32C00347DE4 /* PageControlViewController.swift */,
+			);
+			path = pageControl;
+			sourceTree = "<group>";
+		};
+		38EF7C66293B428900347DE4 /* SelectUIView */ = {
+			isa = PBXGroup;
+			children = (
+				38EF7C67293B429F00347DE4 /* SelectUIViewViewController.swift */,
+			);
+			path = SelectUIView;
+			sourceTree = "<group>";
+		};
+		38EF7C69293EC0CE00347DE4 /* PenGestureView */ = {
+			isa = PBXGroup;
+			children = (
+				38EF7C6A293EC0E000347DE4 /* PenGestureViewController.swift */,
+			);
+			path = PenGestureView;
+			sourceTree = "<group>";
+		};
+		38EF7C6C293ECB1600347DE4 /* ScrollAndButton */ = {
+			isa = PBXGroup;
+			children = (
+				38EF7C6E293ECB3200347DE4 /* ScrollAndButtonViewController.swift */,
+			);
+			path = ScrollAndButton;
 			sourceTree = "<group>";
 		};
 		A77F46DA2901922200BE8815 /* NewsFeeds */ = {
@@ -251,19 +384,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384DF05229447FBE005C31D8 /* BubblePickerViewController.swift in Sources */,
 				3805A88F28A3645F009A34A3 /* ButtonViewController.swift in Sources */,
 				A77F46DE2901926400BE8815 /* NewsFeedsCollectionViewCell.swift in Sources */,
+				384DF05C294481EF005C31D8 /* BubbleScene.swift in Sources */,
 				381AB43C2911420C00620635 /* GotoSomewhereButton.swift in Sources */,
+				38EF7C6F293ECB3200347DE4 /* ScrollAndButtonViewController.swift in Sources */,
+				38EF7C622938D32C00347DE4 /* PageControlViewController.swift in Sources */,
 				3805A80028A264DF009A34A3 /* AppDelegate.swift in Sources */,
 				A7DD1A2728FEAE8A0031841E /* CollectionViewController.swift in Sources */,
 				389B57A4290994BB0067620A /* AddImageCollectionViewCell.swift in Sources */,
+				384DF05A294481DB005C31D8 /* BubbleNode.swift in Sources */,
+				38EE2E01291B325200C3AE0C /* UIViewController+.swift in Sources */,
+				38EDAA4A292D32EA007EFFA4 /* CategoryComponent.swift in Sources */,
+				384DF05829448187005C31D8 /* SIFloatingNode.swift in Sources */,
 				A7DD1A2928FEBE1E0031841E /* CollectionViewCell.swift in Sources */,
 				A77F46DC2901924C00BE8815 /* NewsFeedsViewController.swift in Sources */,
+				3851FC012912984900CF3E89 /* DaBuSoonDaViewController.swift in Sources */,
+				38EF7C68293B429F00347DE4 /* SelectUIViewViewController.swift in Sources */,
+				3851FBFE291297B600CF3E89 /* DaBuSoonDaButton.swift in Sources */,
+				38EDAA45292D2174007EFFA4 /* ChooseInterestViewController.swift in Sources */,
+				38EF7C6B293EC0E000347DE4 /* PenGestureViewController.swift in Sources */,
 				381AB43F2911423F00620635 /* GotoNewsViewController.swift in Sources */,
 				3805A80228A264DF009A34A3 /* SceneDelegate.swift in Sources */,
+				380DC75B2927321200BA93E6 /* ScrollViewController.swift in Sources */,
 				3805A81928A2973F009A34A3 /* UIColor+.swift in Sources */,
 				381AB43A291141EB00620635 /* GotoView.swift in Sources */,
 				3805A89328A36B68009A34A3 /* VRViewController.swift in Sources */,
+				384DF05629448171005C31D8 /* SIFloatingCollectionScene.swift in Sources */,
 				A7DD1A3228FFF0760031841E /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

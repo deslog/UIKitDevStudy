@@ -43,7 +43,10 @@ class NewsFeedsCollectionViewCell: UICollectionViewCell {
     // MARK: method
 
     func setupLayout() {
-        [newsBackgroundView ,newsTitleLabel, newsCategoryLabel].forEach { addSubview($0) }
+        addSubview(newsBackgroundView)
+        addSubview(newsTitleLabel)
+        addSubview(newsCategoryLabel)
+
         NSLayoutConstraint.activate([
             newsBackgroundView.topAnchor.constraint(equalTo: self.topAnchor),
             newsBackgroundView.leadingAnchor.constraint(equalTo: self.leadingAnchor),

@@ -32,7 +32,7 @@ final class GotoSomewhereButton: UIButton {
     private func configureUI() {
         configuration?.baseBackgroundColor = .tintColor
         configuration?.titleAlignment = .center
-        configuration?.cornerStyle = .medium
+        configuration?.cornerStyle = .capsule
     }
 
     private func setupLayout() {
